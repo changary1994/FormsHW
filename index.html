@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms HW</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body id="b1">
+    <h1>
+        <div>Forms HW</div>
+    </h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="Blank"><br>
+        <label for="background">Background Color</label><br>
+        <input type="color" id="background" name="background" value="#FFFFFF" onchange="this.parentNode.style.backgroundColor = this.value"><br><br>
+        <label for="textColor">Text Color</label><br>
+        <input type="color" id="textColor" name="textColor" value="black" onchange="this.parentNode.style.color = this.value"><br><br>
+        <label for="size">Text Size</label><br>
+        <input type="range" min="12" max="48" id="size" name="size" value="12" step="12" oninput="this.parentNode.style.fontSize = this.value"><br><br>
+        <input type="radio" id="arial" name="font" value="Arial" onchange="this.parentNode.style.fontFamily = this.value">
+        <label for="arial">Arial</label><br>
+        <input type="radio" id="verdana" name="font" value="Verdana" onchange="this.parentNode.style.fontFamily = this.value">
+        <label for="verdana">Verdana</label><br>
+        <input type="radio" id="tahoma" name="font" value="Tahoma" onchange="this.parentNode.style.fontFamily = this.value">
+        <label for="tahoma">Tahoma</label> <br>
+        <input type="submit" value="Reset">
+    </form>
+    </h2>
+    <footer><a href="https://garychan.me/#/homework">Return to Previous Page</a></footer>
+</body>
+
+</html>
